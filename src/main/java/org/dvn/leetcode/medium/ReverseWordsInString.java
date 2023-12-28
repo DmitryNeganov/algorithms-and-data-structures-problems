@@ -1,4 +1,4 @@
-package org.dvn.leetcode;
+package org.dvn.leetcode.medium;
 
 //151
 public class ReverseWordsInString {

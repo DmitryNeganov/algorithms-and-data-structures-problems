@@ -1,4 +1,4 @@
-package org.dvn.leetcode;
+package org.dvn.leetcode.easy;
 
 import java.util.LinkedList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package org.dvn.leetcode;
+package org.dvn.leetcode.easy;
 
 //1071
 public class GreatestCommonDivisorOfStrings {
