@@ -1,4 +1,4 @@
-package org.dvn.leetcode.easy;
+package org.dvn.leetcode.easy.array_string;
 
 import java.util.LinkedList;
 import java.util.List;

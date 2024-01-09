@@ -1,4 +1,4 @@
-package org.dvn.leetcode.easy;
+package org.dvn.leetcode.easy.two_pointers;
 
 public class MoveZeroes {
 

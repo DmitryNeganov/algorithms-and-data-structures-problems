@@ -1,4 +1,4 @@
-package org.dvn.leetcode.medium;
+package org.dvn.leetcode.medium.sliding_window;
 
 import java.util.Arrays;
 import java.util.HashSet;

@@ -1,4 +1,4 @@
-package org.dvn.leetcode.medium.MaxNumberofKSumPairs;
+package org.dvn.leetcode.medium.two_pointers.MaxNumberofKSumPairs;
 
 import java.util.Arrays;
 

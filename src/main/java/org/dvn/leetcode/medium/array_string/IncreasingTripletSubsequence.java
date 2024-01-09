@@ -1,4 +1,4 @@
-package org.dvn.leetcode.medium;
+package org.dvn.leetcode.medium.array_string;
 
 //334
 public class IncreasingTripletSubsequence {

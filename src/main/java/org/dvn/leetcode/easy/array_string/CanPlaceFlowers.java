@@ -1,4 +1,4 @@
-package org.dvn.leetcode.easy;
+package org.dvn.leetcode.easy.array_string;
 
 //605
 public class CanPlaceFlowers {

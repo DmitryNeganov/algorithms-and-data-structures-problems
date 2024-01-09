@@ -1,4 +1,4 @@
-package org.dvn.leetcode.easy;
+package org.dvn.leetcode.easy.prefix_sum;
 
 //1732
 public class FindTheHighestAltitude {

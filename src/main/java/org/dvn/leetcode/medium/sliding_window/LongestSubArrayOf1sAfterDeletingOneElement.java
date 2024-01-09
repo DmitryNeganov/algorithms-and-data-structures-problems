@@ -1,4 +1,4 @@
-package org.dvn.leetcode.medium;
+package org.dvn.leetcode.medium.sliding_window;
 
 //1493
 public class LongestSubArrayOf1sAfterDeletingOneElement {

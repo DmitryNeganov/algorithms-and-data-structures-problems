@@ -1,4 +1,4 @@
-package org.dvn.leetcode.medium;
+package org.dvn.leetcode.medium.two_pointers;
 
 //11
 public class ContainerWithMostWater {

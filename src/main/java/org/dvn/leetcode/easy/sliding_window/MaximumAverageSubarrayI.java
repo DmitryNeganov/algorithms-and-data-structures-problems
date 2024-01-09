@@ -1,4 +1,4 @@
-package org.dvn.leetcode.easy;
+package org.dvn.leetcode.easy.sliding_window;
 
 //643
 public class MaximumAverageSubarrayI {

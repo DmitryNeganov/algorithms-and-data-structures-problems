@@ -1,4 +1,4 @@
-package org.dvn.leetcode.easy;
+package org.dvn.leetcode.easy.two_pointers;
 
 //392
 public class IsSubsequence {

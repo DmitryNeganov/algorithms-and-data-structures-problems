@@ -1,4 +1,4 @@
-package org.dvn.leetcode.medium;
+package org.dvn.leetcode.medium.array_string;
 
 import java.util.ArrayList;
 import java.util.List;
