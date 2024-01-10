@@ -11,29 +11,17 @@ public class FindPivotIndex {
     }
 
     public static int pivotIndex(int[] nums) {
-        int leftSum = 0, rightSum = 0;
-        int left = 0, right = nums.length - 1;
-
-        while (left < right) {
-            if (leftSum < rightSum) {
-                leftSum += nums[left];
-                left++;
-            } else if (leftSum > rightSum) {
-                rightSum += nums[right];
-                right--;
-            } else {
-                if (nums[left] < nums[right]) {
-                    leftSum += nums[left];
-                    left++;
-                } else {
-                    rightSum += nums[right];
-                    right--;
-                }
-            }
-            System.out.println("l = " + left + ", r = " + right);
-            System.out.println("ls = " + leftSum + ", rs = " + rightSum);
+        int fullSum = 0;
+        for (int i = 0; i < nums.length; i++) {
+            fullSum += nums[i];
         }
-        if (leftSum != rightSum) return -1;
-        return left;
+        int leftSum = 0;
+        for (int i = 0; i < nums.length; i++) {
+            if ((leftSum * 2) == (fullSum - nums[i])) {
+                return i;
+            }
+            leftSum += nums[i];
+        }
+        return -1;
     }
 }
