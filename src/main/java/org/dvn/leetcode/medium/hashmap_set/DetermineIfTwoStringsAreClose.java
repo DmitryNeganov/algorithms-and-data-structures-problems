@@ -1,49 +1,39 @@
 package org.dvn.leetcode.medium.hashmap_set;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.Arrays;
 
 //1657
 public class DetermineIfTwoStringsAreClose {
 
-    public static void main(String[] args) {
-        String str1 = "cabbba";
-        String str2 = "abbccc";
-
-        System.out.println(new DetermineIfTwoStringsAreClose().closeStrings(str1, str2));
-    }
-
-
     public boolean closeStrings(String word1, String word2) {
 
-        if (word1.length() != word2.length()) return false;
+        int[] freq1 = countFreqs(word1);
+        int[] freq2 = countFreqs(word2);
 
-        Map<Character, Integer> mapaWord1 = putCharsIntoMap(word1);
-        Map<Character, Integer> mapaWord2 = putCharsIntoMap(word2);
-
-        for (char c: mapaWord1.keySet()) {
-            if (!mapaWord2.containsKey(c)) {
-                return false;
-            }
-            if (!mapaWord2.containsValue(mapaWord1.get(c))) {
+        for (int i = 0; i < 26; i++) {
+            if ( ( (freq1[i] > 0)&& freq2[i] == 0) || (freq1[i]==0 && (freq2[i] > 0) ) ) {
                 return false;
             }
         }
 
+        Arrays.sort(freq1);
+        Arrays.sort(freq2);
+
+        for (int i = 0; i < 26; i++) {
+            int current = freq1[i] - freq2[i];
+            if (current != 0) {
+                return false;
+            }
+        }
         return true;
     }
 
-    private Map<Character, Integer> putCharsIntoMap(String word) {
-        Map<Character, Integer> mapa = new HashMap<>();
-
-        for (int i = 0; i <= word.length() - 1; i++) {
-            char c = word.charAt(i);
-            if (mapa.containsKey(c)) {
-                mapa.put(c, mapa.get(c) + 1);
-            } else {
-                mapa.put(c, 1);
-            }
+    private int[] countFreqs(String word) {
+        int[] freq = new int[26];
+        for (int i = 0; i < word.length(); i++) {
+            freq[word.charAt(i) - 'a']++;
         }
-        return mapa;
+        return freq;
     }
+
 }
