@@ -1,4 +1,4 @@
-package org.dvn.leetcode.easy.arrays;
+package org.dvn.leetcode.easy.array_string;
 
 //169
 public class MajorityElement {
